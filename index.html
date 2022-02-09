@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>H5P Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="assets/main.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/cf7851df9f.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <main>
+      <!-- HEADER -->
+      <header>
+        <div class="content-wrap">
+          <div class="title-info">
+            <h1>H5P Test</h1>
+          </div>
+        </div>
+      </header>
+
+      <!-- SECTION -->
+      <section class="interactives">
+        <div class="content-wrap divider">
+          <section class="interactive-info">
+            <div id='h5p-container'>
+              <!-- H5P -->
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="content-wrap">
+          <h3>Find Out More&hellip;</h3>
+          <ul class="more-info">
+            <li><a href="https://serenascalzi.com/now" target="_blank">WordPress &nbsp; <i class="fab fa-wordpress"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+
+    <!-- SCRIPT -->
+    <script type="text/javascript">
+      const el = document.getElementById('h5p-container');
+      const options = {
+        h5pJsonPath: 'h5p',
+        frameJs: 'assets/frame.bundle.js',
+        frameCss: 'assets/styles/h5p.css',
+      }
+      new H5PStandalone.H5P(el, options);
+    </script>
+  </body>
+</html>

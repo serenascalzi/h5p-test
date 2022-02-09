@@ -111,12 +111,6 @@ footer {
 
 /* RESPONSIVE */
 @media screen and (min-width: 768px) {
-  .interactive-info {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    column-gap: 20px;
-  }
-
   .more-info {
     display: flex;
     justify-content: center;
